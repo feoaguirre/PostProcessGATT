@@ -1,19 +1,18 @@
+%% definitions and loads
 fstart = 300;
 fend = 400;
-% fstart = 50;
-% fend = 102;
 
-% cd 'E:\DNS\new\m05-FINAL';
-% cd 'B:\L12_5-D12_5final';
-% cd 'B:\L20-D3r2';
 cd 'E:\DNS\m09final'
 aux3 = load('mesh.mat');
 nx = length(aux3.X); ny = length(aux3.Y); nz = length(aux3.Z);
+
+%% start the loop 
+
 for Flow= fstart:fend
-%    tic
     
+    % load files 
+
     flowname = strcat(sprintf('flow_%010d.mat',Flow));
-%     flow = load(sprintf('flow_%010d.mat',Flow));
     flow = matfile(sprintf('flow_%010d.mat',Flow));
     [nx,ny,nz] = size(flow,'U');
     [nx,ny,nz] = size(flow,'V');
@@ -23,7 +22,11 @@ for Flow= fstart:fend
     if ~exist('flow','file')
         continue;
     end
+
+    % checking if l2 and q, if not exist compute the derivatives
+
     if ~exist('l2','dir') && ~exist('q','dir') 
+
         U = flow.U;
         U(isnan(U)) = 0;
         V = flow.V;
@@ -45,14 +48,18 @@ for Flow= fstart:fend
         
         Wx = Wx./gradient(aux3.X');
         Wy = Wy./gradient(aux3.Y);
-        Wz = Wz./permute(gradient(aux3.Z),[1 3 2]);        
+        Wz = Wz./permute(gradient(aux3.Z),[1 3 2]);   
+
     end
         
-        
+    % check if exist L2 compute or append
+
+
     if exist('l2','dir')
         aux1 = load(strcat('l2-f',num2str(Flow),'.mat')); %colocar função que calcula L2
         L2 = aux1.omega;
     else
+        % compute L2
         L2 = 0*U;
         
         for i = 60:size(U,1)
@@ -69,6 +76,8 @@ for Flow= fstart:fend
         end
         
     end
+    
+    % check if exist q compute or append
     
     if exist('q','dir')
         cd q;
@@ -109,29 +118,29 @@ for Flow= fstart:fend
         Q = q./mq;
     end
     
-    %Dilatation = (Ux+Vy+Wz);
+    %compute other important variables
+
+    Dilatation = (Ux+Vy+Wz);
     
     
-    %aux3 = load('mesh.mat');
-    %gama = 1.4;
-    %X = aux3.X;
-    %Y = aux3.Y;
-    %Z = aux3.Z;
-    %wall = aux3.wall;
-    %flowParameters = aux3.flowParameters;
-%     flowType = aux3.flowType;
-%     P = 0.4.*flow.R.*flow.E;
-%     T = flow.E.*gama.*(gama-1).*(flowParameters.Ma.*flowParameters.Ma);
+    aux3 = load('mesh.mat');
+    gama = 1.4;
+    X = aux3.X;
+    Y = aux3.Y;
+    Z = aux3.Z;
+    wall = aux3.wall;
+    flowParameters = aux3.flowParameters;
+    flowType = aux3.flowType;
+    P = 0.4.*flow.R.*flow.E;
+    T = flow.E.*gama.*(gama-1).*(flowParameters.Ma.*flowParameters.Ma);
     [~,~,Vortk,~] = vorticidade(flow);
-%     Mach = (1/sqrt(gama.*(gama-1))).*flow.U./sqrt(flow.E);
+    Mach = (1/sqrt(gama.*(gama-1))).*flow.U./sqrt(flow.E);
     
     
     
-%     save('flow_0000000060.mat','L2','Q','dilatation',"P","T","X","Y","Z","Mach","Vorti","Vortj","Vortk","flowType","wall","flowParameters",'-append','-v7.3')
-    save(flowname,'L2','Q',"Vortk",'-append')
-%     clear flow aux1 aux2 aux3 L2 Q X Y Z P dilatation T Vortk Vortj Vorti Mach Vort wall flowParameters flowType U V W Ux Uy Uz Vx Vy Vz Wx Wy Wz mq q qs S11 S12 S13 S22 S23 S33 Omega12 Omega13 Omega23;
+
+    save(flowname,'L2','Q','Dilatation','P','T','Mach',"Vortk",'-append')
     clear flow aux1 aux2 L2 Q X dilatation U V W Ux Uy Vortk Uz Vx Vy Vz Wx Wy Wz mq q qs S11 S12 S13 S22 S23 S33 Omega12 Omega13 Omega23;
-%     toc
 end
 
 

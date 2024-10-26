@@ -1,10 +1,7 @@
 % clear;clc;
 
-% steps = 1:2000;
 steps = 200:300;
 casePath = 'E:\DNS\new\m05-FINAL';
-% casePath = 'C:\Users\Intel i3\Downloads\teste - Copia';
-% cd 'C:\Users\Intel i3\Downloads\teste - Copia';
 cd 'E:\DNS\new\m05-FINAL';
 load mesh.mat;
 xEnd = 500;
