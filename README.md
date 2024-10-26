@@ -4,43 +4,76 @@ This repository is a collection of functions that may be useful to new GATT USP 
 
 It contains the following structure: Matlab folder, Python folder, and Labview folder, all of which have the respective format functions.
 
-# Matlab folder, functions:
+# =========================================================  Matlab functions: ========================================================= 
 
 # view2D.m: 
-    Simple example for plotting a two-dimensional variable of the flow. This file loads the mesh and the flow for plotting the variable.
+    
+Simple example for plotting a two-dimensional variable of the flow. This file loads the mesh and the flow for plotting the variable.
 
 # loadlog.m:
-    Loads the log file of the simulation and returns the time and the values of the variables with all the probes.
+   
+Loads the log file of the simulation and returns the time and the values of the variables with all the probes.
 
 # plotmesh.m:
-    Plots the mesh of the simulation.
+    
+Plots the mesh of the simulation.
 
 # volumecontour.m:
-    Plot a series of surfaces to generate a three-dimensional volumetric plot.
+    
+Plot a series of surfaces to generate a three-dimensional volumetric plot.
 
 # posprocvars.m:
-    Postprocesses the variables of the simulation. It loads the flow file and the mesh, computing Q criterium, Lambda 2, Dilatation, Mach, Pressure, Temperature, and Vorticity. After appending to the original flow.
+    
+Postprocesses the variables of the simulation. It loads the flow file and the mesh, computing Q criterium, Lambda 2, Dilatation, Mach, Pressure, Temperature, and Vorticity. After appending to the original flow.
 
 # meanflow_analises_x.m:
-    Check the mean flow in the X direction.
+    
+Check the mean flow in the X direction.
     
 # meanflow_analises_z.m:
-    Check the mean flow in the Z direction.    
+    
+Check the mean flow in the Z direction.    
 
 # meanflow_baseflow_compare.m:
-    Check the mean flow and compare with the base flow.
+    
+Check the mean flow and compare it with the base flow.
 
 # prob_analise.m
-    Used to check and analyze the probs in the log.txt.
+    
+Used to check and analyze the probs in the log.txt.
 
 # shapefactor.m
-    Shape factor calculate.
+    
+Shape factor calculation.
 
 # plotlogs.m 
-    Similar to loadlog, but used to plot the probs.
+    
+Similar to loadlog, but used to plot the probs.
 
 # walllaw.m
-    Check the law of the wall.
+    
+Check the law of the wall.
 
 # cf.m 
-    Check the  Coefficient of Friction.
+    
+Check the  Coefficient of Friction.
+
+# contourf_physFourierSpace_zt.m
+
+Preparation and plot for the two-dimensional spectrum.
+
+# plotmodes.m and plotModesFiltered2.m
+
+Preparing and plotting the frequency range in the dataset.
+
+# filt_GaussianShape.m
+
+Gaussian filter for a frequency band.
+
+# specCalc_zt.m
+
+Calculation for the two-dimensional spectrum.
+
+# =========================================================  Python functions: ========================================================= 
+
+#
