@@ -76,4 +76,10 @@ Calculation for the two-dimensional spectrum.
 
 # ===============  Python functions: =============== 
 
-#
+# check_requirements.py
+
+Check if all the python dependencies stay installed in the computer.
+
+# vtkconvert.py
+
+Read a mat file and create a vtk file for postprocessing on Paraview or similar.
