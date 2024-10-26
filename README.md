@@ -98,7 +98,7 @@ specCalc_zt:
 
 Calculation for the two-dimensional spectrum.
 
-functions needed:
+Other Matlab specifics functions needed:
 
 Crameri colormap available on: (https://www.fabiocrameri.ch/colourmaps/)
 
