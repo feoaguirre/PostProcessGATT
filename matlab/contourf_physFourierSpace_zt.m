@@ -3,7 +3,10 @@ addpath 'C:\Users\Felipe\Documents\MATLAB/auxFunc/'
 addpath 'C:\Users\Felipe\Documents\MATLAB/auxFunc/crameri_colormap/crameri/'
 set(groot,'defaultTextinterpreter','latex');
 set(groot,'defaultAxesTickLabelInterpreter','latex');
+
 % ---------------------------------------------------
+% definitions
+
 Re  = 734;
 Ma  = 1.2;
 D = 6.11;
@@ -19,6 +22,8 @@ var      = 'U';
 xStations = [xC2-0.2*L  xC2+2.6*L xC2+2.7*L xC2+2.8*L xC2+3*L xC2+4*L xC2+16*L];
 yPos = ones(1,length(xStations)) * (1);
 zInterval = [-1 1]*20;
+
+% filters and mean
 
 extractMeanFlow_z = true; % true | false
 extractMeanFlow_t = true;
@@ -36,6 +41,8 @@ cLimits = 'global'; % 'local' | 'global'
 nLvls = 30;
 cMap1 = crameri('vik',nLvls);
 cMap2 = crameri('lajolla',nLvls);
+
+%compute the lstmodes
 
 modes = load('E:\DNS\instabilidade\modesLSTquali.mat');
 betamodeR1 = real(modes.beta734([1]));
