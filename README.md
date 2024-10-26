@@ -4,6 +4,22 @@ This repository is a collection of functions that may be useful to new GATT USP 
 
 It contains the following structure: Matlab folder, Python folder, and Labview folder, all of which have the respective format functions.
 
+Necessary programs for the GATT USP students: 
+
+Matlab (2018a or new)
+
+python3
+
+visual studio: https://code.visualstudio.com/
+
+MobaXterm: https://mobaxterm.mobatek.net/
+
+WSL: https://learn.microsoft.com/en-us/windows/wsl/install
+
+Paraview: https://www.paraview.org/download/
+
+Github: https://desktop.github.com/download/
+
 # ============  Matlab functions: ============
 
 # view2D: 
