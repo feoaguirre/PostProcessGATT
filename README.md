@@ -10,8 +10,6 @@ Matlab (2018a or new)
 
 python3
 
-visual studio: https://code.visualstudio.com/
-
 MobaXterm: https://mobaxterm.mobatek.net/
 
 WSL: https://learn.microsoft.com/en-us/windows/wsl/install
@@ -19,6 +17,16 @@ WSL: https://learn.microsoft.com/en-us/windows/wsl/install
 Paraview: https://www.paraview.org/download/
 
 Github: https://desktop.github.com/download/
+
+visual studio: https://code.visualstudio.com/
+
+VS extensions: 
+
+Blackbox AI: https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox
+Jupyter: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+Remote - SSH: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+Remote Explorer: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer
+
 
 # ============  Matlab functions: ============
 
