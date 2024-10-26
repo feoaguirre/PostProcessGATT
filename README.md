@@ -30,75 +30,75 @@ Remote Explorer: https://marketplace.visualstudio.com/items?itemName=ms-vscode.r
 
 # ============  Matlab functions: ============
 
-# view2D: 
+view2D: 
     
 Simple example for plotting a two-dimensional variable of the flow. This file loads the mesh and the flow for plotting the variable.
 
-# loadlog:
+loadlog:
    
 Loads the log file of the simulation and returns the time and the values of the variables with all the probes.
 
-# plotmesh:
+plotmesh:
     
 Plots the mesh of the simulation.
 
-# volumecontour:
+volumecontour:
     
 Plot a series of surfaces to generate a three-dimensional volumetric plot.
 
-# posprocvars:
+posprocvars:
     
 Postprocesses the variables of the simulation. It loads the flow file and the mesh, computing Q criterium, Lambda 2, Dilatation, Mach, Pressure, Temperature, and Vorticity. After appending to the original flow.
 
-# meanflow_analises_x:
+meanflow_analises_x:
     
 Check the mean flow in the X direction.
     
-# meanflow_analises_z:
+meanflow_analises_z:
     
 Check the mean flow in the Z direction.    
 
-# meanflow_baseflow_compare:
+meanflow_baseflow_compare:
     
 Check the mean flow and compare it with the base flow.
 
-# prob_analise:
+prob_analise:
     
 Used to check and analyze the probs in the log.txt.
 
-# shapefactor:
+shapefactor:
     
 Shape factor calculation.
 
-# plotlogs:
+plotlogs:
     
 Similar to loadlog, but used to plot the probs.
 
-# walllaw:
+walllaw:
     
 Check the law of the wall.
 
-# cf:
+cf:
     
 Check the  Coefficient of Friction.
 
-# contourf_physFourierSpace_zt:
+contourf_physFourierSpace_zt:
 
 Preparation and plot for the two-dimensional spectrum.
 
-# plotmodes and plotModesFiltered2:
+plotmodes and plotModesFiltered2:
 
 Preparing and plotting the frequency range in the dataset.
 
-# filt_GaussianShape:
+filt_GaussianShape:
 
 Gaussian filter for a frequency band.
 
-# specCalc_zt:
+specCalc_zt:
 
 Calculation for the two-dimensional spectrum.
 
-# functions needed:
+functions needed:
 
 Crameri colormap available on: (https://www.fabiocrameri.ch/colourmaps/)
 
@@ -107,10 +107,14 @@ Simpson's rule for numerical integration: https://www.mathworks.com/matlabcentra
 
 # ============  Python functions: ============
 
-# check_requirements.py
+check_requirements.py:
 
 Check if all the python dependencies stay installed in the computer.
 
-# vtkconvert.py
+vtkconvert.py:
 
 Read a mat file and create a vtk file for postprocessing on Paraview or similar.
+
+# ============ Acknowledgements ============
+
+We thank the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)- Programa de Excelência Acadêmica (PROEX) - Brasil for Financial Support. 
