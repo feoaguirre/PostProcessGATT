@@ -74,6 +74,13 @@ Gaussian filter for a frequency band.
 
 Calculation for the two-dimensional spectrum.
 
+# functions needed:
+
+Crameri colormap available on: (https://www.fabiocrameri.ch/colourmaps/)
+
+Simpson's rule for numerical integration: https://www.mathworks.com/matlabcentral/fileexchange/25754-simpson-s-rule-for-numerical-integration
+
+
 # ============  Python functions: ============
 
 # check_requirements.py
