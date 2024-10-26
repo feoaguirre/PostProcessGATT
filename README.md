@@ -4,7 +4,7 @@ This repository is a collection of functions that may be useful to new GATT USP 
 
 It contains the following structure: Matlab folder, Python folder, and Labview folder, all of which have the respective format functions.
 
-# =============  Matlab functions: =============
+# ============  Matlab functions: ============
 
 # view2D: 
     
@@ -74,7 +74,7 @@ Gaussian filter for a frequency band.
 
 Calculation for the two-dimensional spectrum.
 
-# =============  Python functions: =============
+# ============  Python functions: ============
 
 # check_requirements.py
 
