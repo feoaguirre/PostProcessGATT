@@ -115,6 +115,6 @@ vtkconvert.py:
 
 Read a mat file and create a vtk file for postprocessing on Paraview or similar.
 
-# ============ Acknowledgements ============
+# ========= Acknowledgements ===========
 
 We thank the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)- Programa de Excelência Acadêmica (PROEX) - Brasil for Financial Support. 
