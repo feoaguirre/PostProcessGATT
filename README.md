@@ -117,4 +117,6 @@ Read a mat file and create a vtk file for postprocessing on Paraview or similar.
 
 # ========= Acknowledgements ===========
 
-We thank the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)- Programa de Excelência Acadêmica (PROEX) - Brasil for Financial Support, the National Council for Scientific and Technological Development (CNPq), and the US Air Force Office of Scientific Research (AFOSR) for grant FA9550-18-1-0112 and FA9550-23-1-0030, managed by Dr. Daniel Montes, Dr. Roger Greenwood and Dr. James Lyke.
+We thank the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)- Programa de Excelência Acadêmica (PROEX) - Brasil, the National Council for Scientific and Technological Development (CNPq), and the US Air Force Office of Scientific Research (AFOSR) for grant FA9550-23-1-0030, managed by Dr. Roger Greenwood and Dr. James Lyke.
+
+
