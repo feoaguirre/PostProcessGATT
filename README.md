@@ -111,6 +111,31 @@ check_requirements.py:
 
 Check if all the python dependencies stay installed in the computer.
 
+view2D:
+
+Simple example for plotting a two-dimensional variable of the flow. This file loads the mesh and the flow for plotting the variable.
+
+loadlog:
+
+Loads the log file of the simulation and returns the time and the values of the variables with all the probes.
+
+volumecontour:
+    
+Plot a series of surfaces to generate a three-dimensional volumetric plot.
+
+shapefactor:
+    
+Shape factor calculation.
+
+walllaw:
+    
+Check the law of the wall.
+
+cf:
+    
+Check the  Coefficient of Friction.
+
+
 vtkconvert.py:
 
 Read a mat file and create a vtk file for postprocessing on Paraview or similar.
