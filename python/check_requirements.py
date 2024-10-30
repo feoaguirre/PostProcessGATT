@@ -9,7 +9,13 @@ required_packages = [
     'numpy',
     'scipy',
     'h5py',
-    'multiprocessing'
+    'multiprocessing',
+    'matplotlib.pyplot',
+    'scipy.io',
+    'pandas',
+    'mpl_toolkits.mplot3d',
+    'scipy.ndimage',
+    'mpl_toolkits.mplot3d.art3d'    
 ]
 
 # Check and install packages
