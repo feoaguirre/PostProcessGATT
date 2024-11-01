@@ -1,35 +1,6 @@
-# PostProcessGATT
-
 This repository is a collection of functions that may be useful to new GATT USP students.
 
-It contains the following structure: Matlab folder, Python folder, and Labview folder, all of which have the respective format functions.
-
-Necessary programs for the GATT USP students: 
-
-Matlab (2018a or new)
-
-python3
-
-MobaXterm: https://mobaxterm.mobatek.net/
-
-WSL: https://learn.microsoft.com/en-us/windows/wsl/install
-
-Paraview: https://www.paraview.org/download/
-
-Github: https://desktop.github.com/download/
-
-visual studio: https://code.visualstudio.com/
-
-VS extensions: 
-
-Blackbox AI: https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox
-
-Jupyter: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
-
-Remote - SSH: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
-
-Remote Explorer: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer
-
+It contains the following structure: a Matlab folder and a Python folder, all of which have the respective format functions.
 
 # ============  Matlab functions: ============
 
@@ -142,9 +113,3 @@ Check the  Coefficient of Friction.
 vtkconvert.py:
 
 Read a mat file and create a vtk file for postprocessing on Paraview or similar.
-
-# ========= Acknowledgements ===========
-
-We thank the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES)- Programa de Excelência Acadêmica (PROEX) - Brasil, the National Council for Scientific and Technological Development (CNPq), and the US Air Force Office of Scientific Research (AFOSR) for grant FA9550-23-1-0030, managed by Dr. Roger Greenwood and Dr. James Lyke.
-
-
