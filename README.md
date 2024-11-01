@@ -23,8 +23,11 @@ visual studio: https://code.visualstudio.com/
 VS extensions: 
 
 Blackbox AI: https://marketplace.visualstudio.com/items?itemName=Blackboxapp.blackbox
+
 Jupyter: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
+
 Remote - SSH: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh
+
 Remote Explorer: https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer
 
 
